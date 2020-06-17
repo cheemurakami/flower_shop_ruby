@@ -24,7 +24,13 @@
 }
 img{
   opacity: 0.5;
-  display: center;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 6vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .submit-form{
   color: #424B54;
@@ -33,5 +39,32 @@ img{
   color: #424B54;
 }
 
+.flex-container {
+  justify-content: space-around;
+}
 
-
+.navButton {
+  float: left;
+  color: #FFFFFF;
+  margin: 2;
+  padding: 2px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid, white;
+}
+.navigation {
+ 
+  color: #333533;
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid, white;
+  border-radius: 8px;
+}
+ul{
+  list-style: none;
+}

@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <ul class="navigation">
+      <li><a class="navButton" href="/">Home</a></li>
+      <br>
+      <li><a class="navButton" href="/users/sign_up">Sign-up</a></li>
+      <br>
+      <li><a class="navButton" href="/users/sign_in">Login</a></li>
+      <br>
+      <li><a class="navButton" href="/users/sign_out" data-method="delete" value="<%= destroy_user_session_path%>">Sign-out</a></li>
+      <br>
+      <li><a class="navButton" href="/albums" >My Collection</a></li>
+      <br>
+      <li><a class="navButton" href="/search" >Search</a></li>
+    </ul>
+
     <div class="container">
       <img src="https://www.bioadvanced.com/sites/default/files/2018-06/Growing%20Hydrangeas.jpg">
       <%= yield %>
