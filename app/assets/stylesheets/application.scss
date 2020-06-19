@@ -28,7 +28,8 @@ img{
   max-width: 100%;
   height: auto;
   display: block;
-  margin-top: 6vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,7 +54,7 @@ img{
   border: 1px solid, white;
 }
 .navigation {
- 
+  margin-top: 2vh;
   color: #333533;
   display: inline-flex;
   flex-flow: row wrap;
