@@ -19,7 +19,10 @@
       <br>
       <div class="navigation-user">
         <% if current_user %>
+        <li><a class="navButton" href="#">Signed in as <%= current_user.username %></a></li>
+        <br>
         <li><a class="navButton" href="/users/sign_out" data-method="delete" value="<%= destroy_user_session_path%>">Sign-out</a></li>
+        <br>
         <% else  %>
         <li><a class="navButton" href="/users/sign_up">Sign-up</a></li>
         <br>
