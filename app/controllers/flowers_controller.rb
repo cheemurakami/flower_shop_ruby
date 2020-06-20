@@ -13,6 +13,10 @@ class FlowersController < ApplicationController
     render :new
   end
 
+  def show
+    @flower = Flower.find(params[:id])
+  end
+  
   def create
     @flower = Flower.create!(flower_params)
     redirect_to flowers_path
