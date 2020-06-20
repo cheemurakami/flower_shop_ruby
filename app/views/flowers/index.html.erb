@@ -2,7 +2,7 @@
   <% if @flowers.any? %>
     <ul> 
     <% @flowers.each do |flower| %>
-      <li> <%= flower.title %></li>
+      <li> <a href="/flowers/<%= flower.id %>"> <%= flower.title %> </a></li>
     <% end %>  
     </ul>
     <% else %>  
