@@ -16,7 +16,7 @@ class FlowersController < ApplicationController
   def show
     @flower = Flower.find(params[:id])
   end
-  
+
   def create
     @flower = Flower.create!(flower_params)
     redirect_to flowers_path
@@ -35,7 +35,7 @@ class FlowersController < ApplicationController
 
   private
   def flower_params
-    params.require(:flower).permit(:title)
+    params.require(:flower).permit(:title, :content, :price)
   end
 
 end

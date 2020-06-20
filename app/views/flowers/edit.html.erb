@@ -1,7 +1,7 @@
 <h2> Edit your bouquet </h2>
-  <%= form_for @flowers do |f| %>
+  <%= form_for @flower do |f| %>
     <div class="form-group">
-      <%= f.label :title %>
+      <%= f.label :Title %>
       <%= f.text_field :title %>
     </div>
     <div class="form-group">
@@ -9,10 +9,12 @@
       <%= f.text_area :content, :cols => 30, :rows => 10 %>
     </div>
     <div class="form-group">
-      <%= f.label :price %>
+      <%= f.label :Price %>
       <%= f.text_field :price %>
     </div>
     <div class="submit-form">
       <%= f.submit %>
     </div>
   <% end  %>
+  <button><%= link_to "Back", flower_path, {:style=>'color:#2D3339;', :class => "link-to-text-color"} %></button>
+
