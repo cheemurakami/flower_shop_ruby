@@ -66,6 +66,15 @@ img{
   border: 1px solid, white;
   border-radius: 8px;
 }
+
+.navigation-user{
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  display: inline-flex;
+  flex: 1;
+  margin-right: 48px;  
+}
+
 ul{
   list-style: none;
 }
