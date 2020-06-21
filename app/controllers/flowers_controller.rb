@@ -9,7 +9,7 @@ class FlowersController < ApplicationController
   end
 
   def new
-    @flowers = Flower.new
+    @flower = Flower.new
     render :new
   end
 
