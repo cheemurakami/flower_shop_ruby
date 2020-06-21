@@ -1,4 +1,4 @@
-<h2> Post your bouquet </h2>
+<h2> Edit your bouquet </h2>
   <%= form_for @flower do |f| %>
     <div class="form-group">
       <%= f.label :title %>
@@ -16,3 +16,5 @@
       <%= f.submit %>
     </div>
   <% end  %>
+  <button><%= link_to "Back", flower_path, {:style=>'color:#2D3339;', :class => "link-to-text-color"} %></button>
+

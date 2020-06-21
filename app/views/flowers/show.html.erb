@@ -1,0 +1,9 @@
+<h2><%= @flower.title %></h2>
+  <h3>Description:</h3>
+    <p><%= @flower.content %></p>
+
+  <button><%= link_to "Edit your bouquet", edit_flower_path, {:style=>'color:#2D3339;', :class => "link-to-text-color"} %></button>
+  <br>
+  <button><%= link_to "Delete your bouquet", flower_path, {:style=>'color:#2D3339;', :class => "link-to-text-color",method: :delete} %></button>
+  <br>
+  <button><%= link_to "Back", flowers_path, {:style=>'color:#2D3339;', :class => "link-to-text-color"} %></button>

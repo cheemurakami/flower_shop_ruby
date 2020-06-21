@@ -9,8 +9,12 @@ class FlowersController < ApplicationController
   end
 
   def new
-    @flowers = Flower.new
+    @flower = Flower.new
     render :new
+  end
+
+  def show
+    @flower = Flower.find(params[:id])
   end
 
   def create
@@ -20,7 +24,12 @@ class FlowersController < ApplicationController
 
   def edit
     @flower = Flower.find(params[:id])
-    render :edit
+  end
+
+  def update
+    @flower = Flower.find(params[:id])
+    @flower.update!(flower_params)
+    redirect_to flowers_path
   end
 
   def destroy
@@ -31,7 +40,7 @@ class FlowersController < ApplicationController
 
   private
   def flower_params
-    params.require(:flower).permit(:title)
+    params.require(:flower).permit(:title, :content, :price)
   end
 
 end
