@@ -24,12 +24,12 @@ class FlowersController < ApplicationController
 
   def edit
     @flower = Flower.find(params[:id])
-    redirect_to flower_path
   end
 
   def update
     @flower = Flower.find(params[:id])
-    render :edit
+    @flower.update!(flower_params)
+    redirect_to flowers_path
   end
 
   def destroy

@@ -1,15 +1,15 @@
 <h2> Edit your bouquet </h2>
   <%= form_for @flower do |f| %>
     <div class="form-group">
-      <%= f.label :Title %>
+      <%= f.label :title %>
       <%= f.text_field :title %>
     </div>
     <div class="form-group">
-      <%= f.label :Description %>
+      <%= f.label :description %>
       <%= f.text_area :content, :cols => 30, :rows => 10 %>
     </div>
     <div class="form-group">
-      <%= f.label :Price %>
+      <%= f.label :price %>
       <%= f.text_field :price %>
     </div>
     <div class="submit-form">
